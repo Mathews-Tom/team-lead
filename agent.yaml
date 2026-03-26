@@ -1,0 +1,31 @@
+spec_version: "0.1.0"
+name: team-lead
+version: "1.0.0"
+description: >
+  Meta-orchestrator — analyzes complex multi-domain requests, decomposes into
+  agent-sized tasks, delegates to specialized agents, manages sequencing and
+  parallelism, synthesizes results.
+license: MIT
+
+model:
+  preferred: claude-opus-4-6
+  fallback:
+    - claude-sonnet-4-5-20250929
+    - claude-sonnet-4-20250514
+  constraints:
+    temperature: 0.4
+    max_tokens: 16384
+
+skills: []
+
+runtime:
+  max_turns: 50
+  timeout: 600
+
+tags:
+  - orchestration
+  - delegation
+  - multi-agent
+  - coordination
+  - workflow
+  - meta-agent
